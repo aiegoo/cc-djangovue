@@ -1,0 +1,33 @@
+{
+  "prod": {
+    "app_function": "config.wsgi.application",
+    "aws_region": "us-east-1",
+    "certificate_arn": "",
+    "cors": true,
+    "domain": "api.36io.co",
+    "django_settings": "config.settings",
+    "exclude": [],
+    "environment_variables": {
+      "ALLOWED_HOSTS": "*",
+      "AWS_STORAGE_BUCKET_NAME": "CHANGEME-storage-bucket-name",
+      "WEBSITE_URL": "https://www.36io.co",
+      "ROOT_DOMAIN": "36io.co",
+      "DJANGO_SETTINGS_MODULE": "config.settings",
+      "SENTRY_DSN": ""
+    },
+    "keep_warm": false,
+    "memory_size": 1024,
+    "project_name": "django-vue",
+    "remote_env": "s3://prod.36io.co/env.json",
+    "runtime": "python3.7",
+    "s3_bucket": "prod.36io.co",
+    "tags": {
+      "app": "django_vue"
+    },
+    "timeout_seconds": 30,
+    "vpc_config": {
+      "SubnetIds": [],
+      "SecurityGroupIds": []
+    }
+  }
+}
